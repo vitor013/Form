@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:ital,wght@0,400;0,600;0,900;1,500;1,600&display=swap" rel="stylesheet">
     <title>Form</title>
 </head>
 <body>
@@ -11,13 +15,39 @@
             <h2>Create an account</h2>
         </div>
         <form id="form" class="form">
-            <div class="form-control">
+            <div class="form-control error">
                 <label for="username">Username</label>
-                <input type="text">
+                <input type="text" id="username" placeholder="Enter your username...">
                 <i class="fas fa-exclamation-circle"></i>
                 <i class="fas fa-check-circle"></i>
                 <small>Error message</small>
             </div>
+
+            <div class="form-control error">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" placeholder="Enter your e-mail...">
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control success">
+                <label for="password">Password</label>
+                <input type="text" id="password" placeholder="Enter your password...">
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control success">
+                <label for="password-confirmation">Password confirmation</label>
+                <input type="text" id="password-confirmation" placeholder="Enter your password again...">
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <button type="submit">Submit</button>
         </form>
     </div>
 
