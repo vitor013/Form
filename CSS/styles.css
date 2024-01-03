@@ -8,7 +8,7 @@
   body {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(45deg, #00dbde 0%, #fc00ff 100%);
+    background: radial-gradient(closest-side, #da69dc, #07323d, #00dbde);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,8 +71,8 @@
   }
   
   .form button {
-    background-color: #fc00ff;
-    border: 2px solid #fc00ff;
+    background-color: #7d13f7;
+    border: 2px solid #505050;
     color: #fff;
     font-size: 14px;
     width: 100%;
